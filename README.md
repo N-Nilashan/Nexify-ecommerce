@@ -39,11 +39,11 @@ Nexify is a modern and visually appealing e-commerce website developed to enhanc
 
 ## Contributing
 
-We welcome contributions to improve Nexify. If you have any suggestions, find a bug, or want to add new features.
+I welcome contributions to improve Nexify. If you have any suggestions, find a bug, or want to add new features.
 
 ## Challenges Faced
 
-During the development of Nexify, we encountered the following challenges:
+During the development of Nexify, I encountered the following challenges:
 
 1. **Responsive Design:** Ensuring a consistent and appealing layout across various devices was challenging but crucial for a positive user experience.
 2. **Search Functionality:** Implementing an effective search functionality on the Collections page required careful consideration of user input and item matching.
