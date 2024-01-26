@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prata', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navBar h1 {
+    font-family: 'Prata';
+    font-size: 50px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.navBar-links {
+    display: flex;
+    column-gap: 15px;
+}
+
+.navBar-links a {
+    text-decoration: none;
+    color: #1d232c;
+}
+
+.navBar-links a:hover {
+    text-decoration: none;
+    color: #385d9a;
+}
+
+.navBar-toggle {
+    display: none;
+}
+
+.side-navBar {
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    left: -60%;
+    top: 0;
+    padding: 26px;
+    color: white;
+    transition: 0.5s;
+}
+
+.side-navBar-link {
+    margin-bottom: 30px;
+}
+
+.side-navBar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+.headerPart {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 80px;
+}
+
+.headerImg {
+    width: 300px;
+    height: 350px;
+}
+
+#headerButton {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: white;
+    background-color: #1d232c;
+}
+
+/* Service section*/
+.serviceText {
+    font-family: 'prata';
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+}
+
+.serviceDetails {
+    display: flex;
+    padding: 30px;
+
+}
+
+.serviceContainer {
+    font-family: 'prata';
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+    background-color: #f2f4f7;
+}
+
+.newarrivalcontainers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: 80px;
+}
+
+.newArrivalImgContainer {
+    position: relative;
+    flex-basis: 25%;
+    margin-bottom: 15px;
+}
+
+.nwearrivalImages {
+    border-radius: 30px;
+}
+
+.imgButton {
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #1d232c;
+    border-radius: 8px;
+    border-style: none;
+    position: absolute;
+    top: 43%;
+    left: 17%;
+    cursor: pointer;
+}
+
+.imgButton:hover {
+    background-color: #1d232c;
+    color: whitesmoke;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletterH2 {
+    font-family: 'prata';
+}
+
+.newsletterP {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsletterInput {
+    border-radius: 7px;
+    border-color: #1d232c;
+    padding: 10px;
+    width: 800px;
+    display: block;
+}
+
+.newsletterBtn {
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: #fcfcfc;
+    background-color: #1d232c;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #1d232c;
+    color: whitesmoke;
+    padding: 30px;
+    margin-top: 15px;
+}
+
+#footer h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+#footer p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*Collections page*/
+
+#searchbar-container {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+#collections-searchbar {
+    border-radius: 20px;
+    border-color: #1d232c;
+    width: 800px;
+    height: 20px;
+    padding: 10px;
+    color: #1d232c;
+}
+
+#searchbar-icon {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+}
+
+.collection-containers {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: 80px;
+}
+
+.newArrivalImgContainer{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.newArrivalImgContainer p{
+    margin-top: 10px;
+}
+
+
+
+/* Media query  */
+@media screen and (max-width:600px) {
+    .navBar-toggle {
+        display: block;
+    }
+
+    .navBar-links a {
+        display: none;
+    }
+
+    .headerImg {
+        display: none;
+    }
+
+    .serviceText {
+        display: none;
+    }
+
+    .serviceDetails {
+        flex-direction: column;
+    }
+}
